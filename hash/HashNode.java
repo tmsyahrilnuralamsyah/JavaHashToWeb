@@ -38,16 +38,10 @@ public class HashNode {
         // if argument is 'show',  print all value in HTML table format
         if(args[0].equals("show")) {
             Collections.sort(all);
-            System.out.println("<table class='table'>");
-            System.out.println("<tr><th>No</th>");
-            System.out.println("<th>Nama Editor </th>");
-            System.out.println("<th>Jumlah Artikel </th></tr>");
-            
+			System.out.println("<table border='1' class='table table-dark'><tr><th scope='col'>No</th><th scope='col'>Nama Editor</th><th scope='col'>Jumlah Artikel</th></tr>");
             for(int i =0; i<all.size(); i++) {
-                ArrayList<String> e = map.get(all.get(i));
-                System.out.println("<tr><td>"+(i+1)+"</td>");
-                System.out.println("<td>"+all.get(i)+"</td>");
-                System.out.println("<td>"+e.size()+"</td></tr>");
+				ArrayList<String> e = map.get(all.get(i));
+				System.out.println("<tr><td>"+(i+1)+"</td><td>"+all.get(i)+"</td><td>"+e.size()+"</td></tr>");
             }
             System.out.println("</table>");
         
@@ -59,7 +53,7 @@ public class HashNode {
                 Collections.sort(result);
                 System.out.println("<h5 class='mb-3'>Daftar artikel dengan editor "+args[0]+" </h5>");
                 System.out.print("<ul class='list-group'>");
-                result.forEach((e)->System.out.print("<li class='list-group-item list-group-item-action'>"+e+"</li>"));
+                result.forEach((e)->System.out.print("<li class='list-group-item list-group-item-dark'>"+e+"</li>"));
                 System.out.print("</ul>");
             } else { // status: 404
                 System.out.println("Data For "+args[0]+" Not Found");

@@ -29,16 +29,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="input-group mb-3 mt-3 w-50">
+				<div class="input-group my-3 w-50">
 					<input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control input" placeholder="Nama Editor" type="text">
-						<div class="input-group-append">
-							<button class="btn btn-primary search text-white" id="button-addon2" type="button">
-								<span class="fas fa-search fa-sm">Cari</span>
-							</button>
-						</div>
+					<div class="input-group-append">
+						<a class="btn btn-primary search text-white" id="button-addon2" type="button">
+							<span class="fas fa-search fa-sm">Cari</span>
+						</a>
+					</div>
 				</div>
-				<hr class="my-4">
-				</hr>
 				<div class="result text-center">
 				</div>
 			</div>
