@@ -34,7 +34,7 @@ public class HashNode {
 
         if(args[0].equals("show")) {
             Collections.sort(all);
-			System.out.println("<table class='table table-dark table-bordered'><tr><th scope='col'>No</th><th scope='col'>Editor's Name</th><th scope='col'>Number Of Articles</th></tr>");
+			System.out.println("<table class='table table-dark table-bordered'><tr><th scope='col'>Number</th><th scope='col'>Editor's Name</th><th scope='col'>Number Of Articles</th></tr>");
             for(int i =0; i<all.size(); i++) {
 				ArrayList<String> e = map.get(all.get(i));
 				System.out.println("<tr><td>"+(i+1)+"</td><td class='text-left'>"+all.get(i)+"</td><td>"+e.size()+"</td></tr>");
