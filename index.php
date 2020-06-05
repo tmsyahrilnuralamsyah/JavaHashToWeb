@@ -11,25 +11,25 @@
         <div class="container">
             <a class="navbar-brand font-weight-bold" href="index.php"><i class="fas fa-edit"></i> DATA EDITOR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              	<span class="navbar-toggler-icon"></span>
             </button>
       
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="https://github.com/tmsyahrilnuralamsyah/JavaHashToWeb">GitHub</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.php">About Me</a>
-                </li>
-              </ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					<a class="nav-link" href="https://github.com/tmsyahrilnuralamsyah/JavaHashToWeb">GitHub</a>
+					</li>
+					<li class="nav-item active">
+					<a class="nav-link" href="about.php">About Me</a>
+					</li>
+				</ul>
             </div>
         </div>
 	</nav>
 	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="input-group my-3 w-50">
+		<div class="row justify-content-end">
+			<div class="col-lg-4">
+				<div class="input-group my-3">
 					<input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control input" placeholder="Nama Editor" type="text">
 					<div class="input-group-append">
 						<a class="btn btn-primary search text-white" id="button-addon2" type="button">
@@ -37,40 +37,31 @@
 						</a>
 					</div>
 				</div>
-				<div class="result text-center">
-				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<div class="result d-flex justify-content-center mt-4"></div>
-			</div>
-		</div>
+		<div class="result text-center"></div>
 	</div>
 
 	<script src="assets\bootstrap\js\jquery.min.js"></script>
 	<script src="assets\bootstrap\js\bootstrap.min.js"></script>
-	
-	<script>
-		loadData();
-
-		function loadData(){
-			$.get('hash/get.php?q=show', function(data){
-				$(".result").html(data);
-			});
-		}
-
-		$(".search").click(function(){
-            loadCari();
-        });
-
-        function loadCari(){
-            $.get('hash/get.php?q="'+$(".input").val()+'"', function(data){
-                $(".result").html(data);
-            });
-        }
-	</script>
 </body>
 </html>
+<script>
+	loadData();
+
+	function loadData(){
+		$.get('hash/get.php?q=show', function(data){
+			$(".result").html(data);
+		});
+	}
+
+	$(".search").click(function(){
+		loadCari();
+	});
+
+	function loadCari(){
+		$.get('hash/get.php?q="'+$(".input").val()+'"', function(data){
+			$(".result").html(data);
+		});
+	}
+</script>
