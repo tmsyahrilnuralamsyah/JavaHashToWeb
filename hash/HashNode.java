@@ -44,8 +44,8 @@ public class HashNode {
 			ArrayList<String> result = map.get(args[0]);
 			if(result != null) {
                 Collections.sort(result);
-                System.out.println("<h5 class='mb-3'>Daftar artikel "+args[0]+" </h5>");
-                System.out.print("<ul class='list-group'>");
+                System.out.println("<h5 class='text-left mb-3'>Daftar artikel "+args[0]+" </h5>");
+                System.out.print("<ul class='list-group text-left mb-5'>");
                 result.forEach((e)->System.out.print("<li class='list-group-item list-group-item-dark'>"+e+"</li>"));
                 System.out.print("</ul>");
             } else { // Status: 404
