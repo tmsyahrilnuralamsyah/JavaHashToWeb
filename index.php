@@ -27,10 +27,14 @@
         </div>
 	</nav>
 	<div class="container">
+		<div class="text-center mt-3">
+			<h5>Website ini menampilkan informasi editor pada artikel situs detik.com beserta artikel yang telah diedit
+				<br>Data yang diperoleh berasal dari struktur data hash yang diintegrasi dengan web</h5>
+		</div>
 		<div class="row justify-content-end">
 			<div class="col-lg-4">
 				<div class="input-group my-3">
-					<input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control input" placeholder="Nama Editor" type="text">
+					<input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control input" placeholder="Cari..." type="text">
 					<div class="input-group-append">
 						<a class="btn btn-primary search text-white" id="button-addon2" type="button">
 							<span class="fas fa-search fa-sm">Cari</span>
@@ -42,8 +46,8 @@
 		<div class="result text-center"></div>
 	</div>
 
-	<script src="assets\bootstrap\js\jquery.min.js"></script>
-	<script src="assets\bootstrap\js\bootstrap.min.js"></script>
+	<script src="assets\js\jquery.min.js"></script>
+	<script src="assets\js\bootstrap.min.js"></script>
 </body>
 </html>
 <script>
