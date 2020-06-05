@@ -17,13 +17,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="cari.php">PENCARIAN EDITOR</a>
+                  <a class="nav-link" href="https://github.com/tmsyahrilnuralamsyah/JavaHashToWeb">GitHub</a>
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href="tampil.php">TAMPILKAN EDITOR</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.php">ABOUT ME</a>
+                  <a class="nav-link" href="about.php">About Me</a>
                 </li>
               </ul>
             </div>
@@ -39,7 +36,6 @@
 								<span class="fas fa-search fa-sm">Cari</span>
 							</button>
 						</div>
-					</>
 				</div>
 				<hr class="my-4">
 				</hr>
