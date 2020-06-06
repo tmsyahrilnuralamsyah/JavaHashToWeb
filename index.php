@@ -51,17 +51,17 @@
 <script>
 	loadData();
 
-	function loadData(){
+	function loadData() {
 		$.get('hash/get.php?q=show', function(data){
 			$(".result").html(data);
 		});
 	}
 
-	$(".search").click(function(){
+	$(".search").click(function() {
 		loadCari();
 	});
 
-	function loadCari(){
+	function loadCari() {
 		$.get('hash/get.php?q="'+$(".input").val()+'"', function(data){
 			$(".result").html(data);
 		});
